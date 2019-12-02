@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "151083083685",
+    "firebase_url": "https://smartpot-42167.firebaseio.com",
+    "project_id": "smartpot-42167",
+    "storage_bucket": "smartpot-42167.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151083083685:android:27eba5a7f729000be46a4c",
+        "android_client_info": {
+          "package_name": "com.endrawan.smartpot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151083083685-k48d1883h3i2uaqpf63dp8qd86sfj11q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.endrawan.smartpot",
+            "certificate_hash": "363af8fb849253c194d9925a6116d9ee3ad042ef"
+          }
+        },
+        {
+          "client_id": "151083083685-i8rdtks5nb58j1ui302vppq6rgcm7kbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTP__LuOZAqsHQ_ORSUlTMJ1NRlHJblkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151083083685-i8rdtks5nb58j1ui302vppq6rgcm7kbr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
