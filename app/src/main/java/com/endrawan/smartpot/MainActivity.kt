@@ -2,6 +2,7 @@ package com.endrawan.smartpot
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -31,10 +32,24 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+        wateringStatus.addValueEventListener(object:ValueEventListener {
+            override fun onCancelled(error: DatabaseError) {
+                Log.e("database", error.message)
+            }
+
+            override fun onDataChange(snapshot: DataSnapshot) {
+                Log.d("database", snapshot.value.toString())
+                val status = snapshot.getValue(Boolean::class.java)
+                watering.isEnabled = !status!!
+            }
+
+        })
+
         watering.setOnClickListener {
             wateringStatus.setValue(true)
-            Thread.sleep(2000)
-            wateringStatus.setValue(false)
+            Handler().postDelayed({
+                wateringStatus.setValue(false)
+            }, 2000)
         }
     }
 }
